@@ -11,4 +11,4 @@ fi
 
 echo "run with userdir=$USERDIR"
 
-docker-compose run -e  USERDIR=$USERDIR node-red
+USERDIR=$USERDIR docker compose up
