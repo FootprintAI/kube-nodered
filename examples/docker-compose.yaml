@@ -8,6 +8,7 @@ version: "3.7"
 
 services:
   node-red:
+    image: reg.footprint-ai.com/public/kube-nodered:latest
     build:
       context: .
       dockerfile: Dockerfile
@@ -16,8 +17,11 @@ services:
         com.docker.compose.container-number: "1"
     environment:
       - TZ=Asia/Taipei
-      - USERDIR=/data/0.helloworld
+      - USERDIR=$USERDIR
       - NODE_RED_CREDENTIAL_SECRET=noderedtutorial
+      - KUBEFLOW_HOST=$KUBEFLOW_HOST
+      - KUBEFLOW_USERNAME=$KUBEFLOW_USERNAME
+      - KUBEFLOW_PASSWORD=$KUBEFLOW_PASSWORD
     ports:
       - "1880:1880"
     networks:

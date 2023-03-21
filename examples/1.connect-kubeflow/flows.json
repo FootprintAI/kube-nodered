@@ -68,11 +68,12 @@
         "id": "7588c855ba3f1c81",
         "type": "pythonshell in",
         "z": "f6f2187d.f17ca8",
-        "name": "hellepython",
-        "pyfile": "/data/0.helloworld/helloworld.py",
+        "name": "kfp python",
+        "pyfile": "/data/1.connect-kubeflow/py/kfp_example.py",
         "virtualenv": "",
-        "continuous": true,
-        "stdInData": true,
+        "continuous": false,
+        "stdInData": false,
+        "python3": true,
         "x": 670,
         "y": 440,
         "wires": [
@@ -96,6 +97,60 @@
         "statusType": "auto",
         "x": 870,
         "y": 440,
+        "wires": []
+    },
+    {
+        "id": "692c86b087eed4a0",
+        "type": "pythonshell in",
+        "z": "f6f2187d.f17ca8",
+        "name": "install dependency",
+        "pyfile": "/data/1.connect-kubeflow/py/install.py",
+        "virtualenv": "",
+        "continuous": false,
+        "stdInData": false,
+        "x": 570,
+        "y": 300,
+        "wires": [
+            [
+                "0b5c3b39a424dc6a"
+            ]
+        ]
+    },
+    {
+        "id": "0b5c3b39a424dc6a",
+        "type": "debug",
+        "z": "f6f2187d.f17ca8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "3b1a0675389769a1",
+        "type": "comment",
+        "z": "f6f2187d.f17ca8",
+        "name": "install python dependency",
+        "info": "",
+        "x": 590,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "04e11dfd70107dcf",
+        "type": "comment",
+        "z": "f6f2187d.f17ca8",
+        "name": "read experiemnt data from kfp",
+        "info": "",
+        "x": 600,
+        "y": 380,
         "wires": []
     }
 ]
