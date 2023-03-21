@@ -12,3 +12,4 @@ fi
 echo "run with userdir=$USERDIR"
 
 USERDIR=$USERDIR docker compose up
+#USERDIR=$USERDIR docker compose convert

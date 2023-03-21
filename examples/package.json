@@ -66,6 +66,7 @@
         "mustache": "4.2.0",
         "node-red": "2.2.3",
         "node-red-admin": "^2.2.3",
+        "node-red-contrib-pythonshell": "github:namgk/node-red-contrib-pythonshell",
         "nopt": "5.0.0",
         "oauth2orize": "1.11.1",
         "on-headers": "1.0.2",
