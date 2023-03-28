@@ -13,7 +13,8 @@ def pip3_install_requirements():
 
 def pip3_install_kfp():
     return subprocess.check_call(["pip3", "install",
-                                  "git+https://github.com/kubeflow/pipelines.git@1.8.19#subdirectory=backend/api/python_http_client"])
+                                  "git+https://github.com/kubeflow/pipelines.git@1.8.19#subdirectory=backend/api/python_http_client",
+                                  "--user"])
 
 python3_version()
 pip3_install_requirements()
