@@ -1,7 +1,6 @@
 import re
 from urllib.parse import urlsplit
 
-import kfp
 import requests
 
 # NOTE: the following code is referred from https://github.com/kubeflow/website/issues/2916
